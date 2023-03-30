@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Crop;
 
-public class Crop {
+import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
+
+public class Crop <T extends Edible> {
 }

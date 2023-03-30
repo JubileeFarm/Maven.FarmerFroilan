@@ -1,4 +1,8 @@
 package com.zipcodewilmington.froilansfarm.Farm;
 
-public class FarmHouse {
+import com.zipcodewilmington.froilansfarm.Person.Person;
+
+import java.util.ArrayList;
+
+public class FarmHouse extends ArrayList<Person> {
 }
