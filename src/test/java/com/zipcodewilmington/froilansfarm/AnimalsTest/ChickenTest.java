@@ -14,7 +14,7 @@ public class ChickenTest {
         //when
 
         //then
-        Assert.assertEquals(//put some word here, chicken.makeNoise());
+        // Assert.assertEquals(//put some word here, chicken.makeNoise());
     }
 
     @Test
@@ -31,10 +31,11 @@ public class ChickenTest {
     public void TestFertilize(){
         //given
         //chicken.Fertilized();
-        Assert.assertEquals(//0, chicken.yield().size());
+
         //when
 
         //then
+        //Assert.assertEquals(0, chicken.yield().size());
     }
 }
 
