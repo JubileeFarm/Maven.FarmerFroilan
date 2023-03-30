@@ -4,8 +4,22 @@ import org.junit.Test;
 
 public class FarmerTest {
     @Test
-    public void TestInstanceFarmer(){}
+    public void TestInstanceFarmer(){
+        //given
+
+        //when
+
+        //then
+        //Assert.assertTrue(Farmer instanceof Person)
+    }
 
     @Test
-    public void TestTractor(){}
+    public void TestEater(){
+        //given
+
+        //when
+
+        //then
+        //Assert.assertTrue(Farmer instanceof Eater)
+    }
 }

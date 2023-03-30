@@ -4,5 +4,11 @@ import org.junit.Test;
 
 public class FieldTest {
     @Test
-    public void TestField(){}
+    public void TestField(){
+        //given
+
+        //when
+
+        //then
+    }
 }

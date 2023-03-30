@@ -4,14 +4,38 @@ import org.junit.Test;
 
 public class EdibleTest {
     @Test
-    public void TestEdible(){}
+    public void TestEdible(){
+        //given
+
+        //when
+
+        //then
+    }
 
     @Test
-    public void TestEgg(){}
+    public void TestEgg(){
+        //given
+
+        //when
+
+        //then
+    }
 
     @Test
-    public void TestTomato(){}
+    public void TestTomato(){
+        //given
+
+        //when
+
+        //then
+    }
 
     @Test
-    public void TestCorn(){}
+    public void TestCorn(){
+        //given
+
+        //when
+
+        //then
+    }
 }

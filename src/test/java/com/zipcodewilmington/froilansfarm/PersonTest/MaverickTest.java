@@ -4,8 +4,21 @@ import org.junit.Test;
 
 public class MaverickTest {
     @Test
-    public void TestMaverick(){}
+    public void TestMaverick(){
+        //given
+
+        //when
+
+        //then
+
+    }
 
     @Test
-    public void TestVehicleIsAircraft(){}
+    public void TestVehicleIsAircraft(){
+        //given
+
+        //when
+
+        //then
+    }
 }
