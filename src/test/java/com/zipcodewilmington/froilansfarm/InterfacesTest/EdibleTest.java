@@ -1,41 +1,40 @@
 package com.zipcodewilmington.froilansfarm.InterfacesTest;
 
+import com.zipcodewilmington.froilansfarm.Animals.Egg;
+import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
+import com.zipcodewilmington.froilansfarm.Produce.Broccoli;
+import com.zipcodewilmington.froilansfarm.Produce.Corn;
+import com.zipcodewilmington.froilansfarm.Produce.Tomato;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class EdibleTest {
-    @Test
-    public void TestEdible(){
-        //given
 
-        //when
-
-        //then
-    }
 
     @Test
     public void TestEgg(){
-        //given
+        Egg egg = new Egg();
+        Assert.assertTrue(egg instanceof Edible);
 
-        //when
 
-        //then
     }
 
     @Test
     public void TestTomato(){
-        //given
-
-        //when
-
-        //then
+        Tomato tomato = new Tomato();
+        Assert.assertTrue(tomato instanceof Edible);
     }
 
     @Test
     public void TestCorn(){
-        //given
+        Corn corn = new Corn();
+        Assert.assertTrue(corn instanceof Edible);
+    }
 
-        //when
+    @Test
+    public void TestBroccoli(){
+        Broccoli broccoli = new Broccoli();
+        Assert.assertTrue(broccoli instanceof Edible);
 
-        //then
     }
 }

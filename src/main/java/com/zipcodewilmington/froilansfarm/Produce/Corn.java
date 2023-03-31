@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Produce;
 
-public class Corn {
+import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
+
+public class Corn implements Edible {
 }

@@ -5,8 +5,6 @@ import com.zipcodewilmington.froilansfarm.Interfaces.NoiseMaker;
 import com.zipcodewilmington.froilansfarm.Interfaces.Rideable;
 
 public class Vehicle implements Rideable, NoiseMaker {
-    public void ride() {
-    }
 
     @Override
     public String makeNoise() {

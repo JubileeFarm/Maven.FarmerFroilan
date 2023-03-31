@@ -11,6 +11,6 @@ public class Animal implements Eater, NoiseMaker {
 
     @Override
     public String eat(Edible edible) {
-        return null;
+        return "Yummy";
     }
 }
