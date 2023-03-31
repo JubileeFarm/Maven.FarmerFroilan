@@ -5,7 +5,7 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 import com.zipcodewilmington.froilansfarm.Interfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.Interfaces.Rider;
 
-public class Person implements Rider, Eater, NoiseMaker {
+public class Person implements Rider, Eater {
     private String name;
     private Rideable whip;
     public Person(String name){

@@ -7,19 +7,30 @@ import com.zipcodewilmington.froilansfarm.Farm.Stable;
 import com.zipcodewilmington.froilansfarm.FarmVehicle.FarmVehicle;
 import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 
-public class Farmer extends Person implements Botanist {
+public class Farmer extends Botanist {
     public Farmer(String name) {
         super(name);
     }
 
-    @Override
+
     public String eat(Edible edible) {
         return "Time to grub !";
     }
 
-    @Override
     public String makeNoise() {
         return "Turn up the value";
+    }
+
+    public ChickenCoop getChickenCoop(int i) {
+        return null;
+    }
+
+    public Stable getStable(int i) {
+        return null;
+    }
+
+    public FarmVehicle getFarmVehicle(int i) {
+        return null;
     }
 
 //    @Override
@@ -27,4 +38,4 @@ public class Farmer extends Person implements Botanist {
 //        super.plant(cropClass, cropRow);
 
     }
-}
+

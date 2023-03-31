@@ -17,8 +17,8 @@ public class CropDuster implements Aircraft, FarmVehicle, NoiseMaker {
         return false;
     }
 
-    @Override
-    public static String makeNoise() {
+
+    public String makeNoise() {
         return "Meow";
     }
 }

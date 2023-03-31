@@ -13,6 +13,8 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Aircraft;
 import com.zipcodewilmington.froilansfarm.Person.Farmer;
 import com.zipcodewilmington.froilansfarm.Person.Maverick;
 import com.zipcodewilmington.froilansfarm.Produce.CornStalk;
+import com.zipcodewilmington.froilansfarm.Produce.GrapeVine;
+
 import com.zipcodewilmington.froilansfarm.Produce.TomatoPlant;
 import org.junit.Assert;
 import org.junit.Before;
@@ -22,7 +24,7 @@ public class FarmTest {
     private Farm farm;
     private Field field;
     private CropRow row1, row2;
-    private ArbVegRow row3;
+    private ArbVegRow row3, row4, row5;
     private ChickenCoop coop1, coop2, coop3, coop4;
     private Stable stable1, stable2, stable3;
     private FarmVehicle vehicle1, vehicle2;
@@ -30,11 +32,15 @@ public class FarmTest {
     private Maverick pilot;
     private Farmer farmer;
     private CornStalk cornStalk;
+    private TomatoPlant tomatoPlant;
+    private GrapeVine grapeVine;
+    private Aircraft aircraft1;
+
 
     @Before
     public //before class is used to execute before all tests are ran
     void setUp() {
-       //establishing the farm to test based on setting the plot in readMe
+        //establishing the farm to test based on setting the plot in readMe
         field = new Field();
         field.add(new CropRow());
         field.add(new CropRow());
@@ -78,8 +84,9 @@ public class FarmTest {
         stable2.add(new Horse());
         stable2.add(new Horse());
 
-       // pilot = new Maverick("Froilanda", aircraft);
-        farm = new Farm(field, coop1, coop2, coop3, coop4, stable1, stable2, stable3, vehicle1, vehicle2);
+
+        pilot = new Maverick("Froilanda");
+        farm = new Farm(field, coop1, coop2, coop3, coop4, stable1, stable2, stable3, vehicle1, vehicle2, aircraft1);
     }
 
     @Test
@@ -88,6 +95,8 @@ public class FarmTest {
         Assert.assertEquals(row1, field.get(0));
         Assert.assertEquals(row2, field.get(1));
         Assert.assertEquals(row3, field.get(2));
+        Assert.assertEquals(row4, field.get(3));
+        Assert.assertEquals(row5, field.get(4));
         Assert.assertEquals(coop1, farmer.getChickenCoop(0));
         Assert.assertEquals(coop2, farmer.getChickenCoop(1));
         Assert.assertEquals(coop3, farmer.getChickenCoop(2));

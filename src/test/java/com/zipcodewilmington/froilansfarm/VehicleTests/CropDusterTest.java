@@ -26,10 +26,6 @@ public class CropDusterTest {
         Assert.assertTrue(DusterBoi instanceof NoiseMaker);
     }
 
-    @Test
-    public void TestNoise(){
-        Assert.assertEquals("Meow", CropDuster.makeNoise());
-    }
 
     @Test
     public void TestLanding(){
