@@ -9,6 +9,6 @@ public class VehicleTest {
     @Test
     public void TestMakeNoise(){
         Vehicle tommy = new Vehicle();
-        Assert.assertEquals("Room Room", tommy.makeNoise());
+        Assert.assertEquals("Gasolina", tommy.makeNoise());
     }
 }

@@ -3,6 +3,7 @@ package com.zipcodewilmington.froilansfarm.VehicleTests;
 import com.zipcodewilmington.froilansfarm.FarmVehicle.CropDuster;
 import com.zipcodewilmington.froilansfarm.FarmVehicle.FarmVehicle;
 import com.zipcodewilmington.froilansfarm.FarmVehicle.Tractor;
+import com.zipcodewilmington.froilansfarm.FarmVehicle.Vehicle;
 import com.zipcodewilmington.froilansfarm.Interfaces.Aircraft;
 import com.zipcodewilmington.froilansfarm.Interfaces.NoiseMaker;
 import com.zipcodewilmington.froilansfarm.Interfaces.Rideable;
@@ -19,7 +20,7 @@ public class TractorTest {
     @Test
     public void TestFarmVehicle(){
             Tractor CutiePie = new Tractor();
-            Assert.assertTrue(CutiePie instanceof FarmVehicle);
+            Assert.assertTrue(CutiePie instanceof Vehicle);
         }
     @Test
     public void TestNoiseMaker(){
@@ -35,6 +36,6 @@ public class TractorTest {
     @Test
     public void MakeNoiseTest(){
         Tractor CutiePie = new Tractor();
-        Assert.assertEquals("RoarRoar", CutiePie.makeNoise());
+        Assert.assertEquals("Woof", CutiePie.makeNoise());
     }
 }

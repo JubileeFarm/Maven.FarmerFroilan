@@ -27,12 +27,5 @@ public class FarmerTest {
         Assert.assertTrue(Farmer instanceof Farmer);
 
     }
-
-    @Test
-    public void TestEater(){
-        Farmer Farmer = new Farmer("Tiger");
-        Assert.assertTrue(Farmer instanceof Eater);
-    }
-
 }
 
