@@ -7,7 +7,7 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Rider;
 public class Maverick extends Person implements Rider {
     private static Aircraft aircraft;
     public Maverick(String name){
-        super(name);
+        //super(name);
     }
 
     public static Aircraft getAircraft(){
