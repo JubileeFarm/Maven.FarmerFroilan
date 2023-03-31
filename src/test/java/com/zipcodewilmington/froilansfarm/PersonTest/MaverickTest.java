@@ -15,11 +15,10 @@ public class MaverickTest {
 
         //when
         Assert.assertTrue(maverick instanceof Person);
-
-
-
     }
-    @public void TestMaverickIsMaverick(){
+
+    @Test
+    public void TestMaverickIsMaverick(){
         //given
         Maverick maverick = new Maverick("Hiep airboY");
 

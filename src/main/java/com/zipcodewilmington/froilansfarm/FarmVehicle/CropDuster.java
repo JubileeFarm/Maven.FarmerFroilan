@@ -1,14 +1,10 @@
 package com.zipcodewilmington.froilansfarm.FarmVehicle;
 
 import com.zipcodewilmington.froilansfarm.Interfaces.Aircraft;
+import com.zipcodewilmington.froilansfarm.Interfaces.NoiseMaker;
 
-public class CropDuster implements Aircraft, FarmVehicle {
+public class CropDuster implements Aircraft, FarmVehicle, NoiseMaker {
     //cropduster is a farmvehicle and aircraft which can fertilize a cropRow
-
-  public static String MakeNoise(){
-      return "brrrrr";
-  }
-
 
 
     @Override
@@ -19,5 +15,10 @@ public class CropDuster implements Aircraft, FarmVehicle {
     @Override
     public boolean land() {
         return false;
+    }
+
+    @Override
+    public static String makeNoise() {
+        return "Meow";
     }
 }

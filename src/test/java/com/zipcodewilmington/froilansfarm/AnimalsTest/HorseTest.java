@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.AnimalsTest;
 
+import com.zipcodewilmington.froilansfarm.Animals.Horse;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,23 +10,12 @@ public class HorseTest {
 
     @Test
     public void TestMakeNoise(){
-        //given
-
-        //when
-
-        //then
-//        Assert.assertEquals(some noise, horse.makeNoise()));
+    Horse horsey = new Horse();
+        Assert.assertEquals("Neeeeeighhh", horsey.makeNoise());
     }
 
     @Test
     public void TestEat(){
-        //given
 
-        //when
-//        String actual = horse.makeNoise();
-//        String expected = "Hayyyyy";
-//
-//        //then
-//        Assert.assertEquals(expected,actual);
     }
 }

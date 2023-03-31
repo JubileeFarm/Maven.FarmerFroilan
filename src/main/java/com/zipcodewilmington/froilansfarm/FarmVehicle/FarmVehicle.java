@@ -1,6 +1,17 @@
 package com.zipcodewilmington.froilansfarm.FarmVehicle;
 
-public interface FarmVehicle<Vehicle> {
+import com.zipcodewilmington.froilansfarm.Farm.Farm;
 
-    //can operate on a farm
+public abstract class FarmVehicle extends Vehicle{
+
+    private Farm farm;
+
+    public void operate(Farm farm) {
+        this.farm = farm;
+    }
+
+    public Farm getFarm(){
+        return farm;
+    }
+
 }

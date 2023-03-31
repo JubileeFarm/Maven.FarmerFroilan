@@ -23,12 +23,12 @@ public class CropDusterTest {
     @Test
     public void TestCropInstanceOf(){
         CropDuster DusterBoi = new CropDuster();
-        Assert.assertEquals(DusterBoi instanceof NoiseMaker);
+        Assert.assertTrue(DusterBoi instanceof NoiseMaker);
     }
 
     @Test
     public void TestNoise(){
-        Assert.assertEquals("Some String", CropDuster.makeNoise());
+        Assert.assertEquals("Meow", CropDuster.makeNoise());
     }
 
     @Test
