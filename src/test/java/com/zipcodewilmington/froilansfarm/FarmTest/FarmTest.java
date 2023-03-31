@@ -78,7 +78,7 @@ public class FarmTest {
         stable2.add(new Horse());
         stable2.add(new Horse());
 
-        pilot = new Maverick("Froilanda", aircraft);
+       // pilot = new Maverick("Froilanda", aircraft);
         farm = new Farm(field, coop1, coop2, coop3, coop4, stable1, stable2, stable3, vehicle1, vehicle2);
     }
 
