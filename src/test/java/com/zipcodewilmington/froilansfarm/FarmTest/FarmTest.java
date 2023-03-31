@@ -5,6 +5,7 @@ import com.zipcodewilmington.froilansfarm.Animals.Horse;
 import com.zipcodewilmington.froilansfarm.Crop.ArbVegRow;
 import com.zipcodewilmington.froilansfarm.Crop.CropRow;
 import com.zipcodewilmington.froilansfarm.Farm.ChickenCoop;
+import com.zipcodewilmington.froilansfarm.Farm.Farm;
 import com.zipcodewilmington.froilansfarm.Farm.Field;
 import com.zipcodewilmington.froilansfarm.Farm.Stable;
 import com.zipcodewilmington.froilansfarm.FarmVehicle.FarmVehicle;
@@ -18,6 +19,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class FarmTest {
+    private Farm farm;
     private Field field;
     private CropRow row1, row2;
     private ArbVegRow row3;
@@ -77,15 +79,15 @@ public class FarmTest {
         stable2.add(new Horse());
 
         pilot = new Maverick("Froilanda", aircraft);
-        farmer = new Farmer("Froilan", field, coop1, coop2, coop3, coop4, stable1, stable2, stable3, vehicle1, vehicle2);
+        farm = new Farm(field, coop1, coop2, coop3, coop4, stable1, stable2, stable3, vehicle1, vehicle2);
     }
 
     @Test
     public void testFarmComponents() {
         Assert.assertEquals(5, field.getNumCropRows());
-        Assert.assertEquals(row1, field.getCropRow(0));
-        Assert.assertEquals(row2, field.getCropRow(1));
-        Assert.assertEquals(row3, field.getCropRow(2));
+        Assert.assertEquals(row1, field.get(0));
+        Assert.assertEquals(row2, field.get(1));
+        Assert.assertEquals(row3, field.get(2));
         Assert.assertEquals(coop1, farmer.getChickenCoop(0));
         Assert.assertEquals(coop2, farmer.getChickenCoop(1));
         Assert.assertEquals(coop3, farmer.getChickenCoop(2));
