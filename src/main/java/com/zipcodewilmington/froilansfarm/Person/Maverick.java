@@ -5,7 +5,7 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Rideable;
 import com.zipcodewilmington.froilansfarm.Interfaces.Rider;
 
 public class Maverick extends Person implements Rider {
-    private Aircraft aircraft;
+    private static Aircraft aircraft;
     public Maverick(String name){
         super(name);
     }
