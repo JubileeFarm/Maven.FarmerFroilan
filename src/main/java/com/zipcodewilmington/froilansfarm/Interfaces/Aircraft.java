@@ -1,4 +1,15 @@
 package com.zipcodewilmington.froilansfarm.Interfaces;
 
-public interface Aircraft {
+import com.zipcodewilmington.froilansfarm.FarmVehicle.Vehicle;
+import com.zipcodewilmington.froilansfarm.Person.Maverick;
+
+public interface Aircraft<T extends Maverick>  {
+
+    //is a vehichle which can fly
+
+
+    boolean fly();
+
+    boolean land();
+
 }
