@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.FarmVehicle;
 
+<<<<<<< HEAD
 import com.zipcodewilmington.froilansfarm.Interfaces.Aircraft;
 
 public class CropDuster implements Aircraft, FarmVehicle {
@@ -20,4 +21,7 @@ public class CropDuster implements Aircraft, FarmVehicle {
     public boolean land() {
         return false;
     }
+=======
+public class CropDuster{
+>>>>>>> zach
 }
