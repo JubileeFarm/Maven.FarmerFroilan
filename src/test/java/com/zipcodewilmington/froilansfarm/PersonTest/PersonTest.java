@@ -1,40 +1,35 @@
 package com.zipcodewilmington.froilansfarm.PersonTest;
 
+import com.zipcodewilmington.froilansfarm.Animals.Chicken;
+import com.zipcodewilmington.froilansfarm.Person.Person;
+import com.zipcodewilmington.froilansfarm.Produce.Corn;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class PersonTest {
     @Test
     public void constructorTest(){
-        //given
+     Person person = new Person("Zach");
+     String expected = "Zach";
+     String actual = person.getName();
 
-        //when
-
-        //then
+     Assert.assertEquals(expected,actual);
     }
 
     @Test
     public void TestEat(){
-        //given
-        //Person person = new Person();
-        //when
-        //String actual = person.eat();
-        //String expected = "Yummy"
+        Person person = new Person("Jen");
+        Corn corn = new Corn();
+        String actual = person.eat(corn);
+        String expected = "Delicioso";
 
-
-        //then
-        //Assert.assertequals(expected,actual);
+        Assert.assertEquals(expected,actual);
     }
 
     @Test
     public void TestMakeNoise(){
-        //given
-        //Person person = new Person();
-        //when
-        //String actual = person.makeNoise();
-        //String expected = "Fart"
+        Person person = new Person("Andre");
 
-
-        //then
-        //Assert.assertequals(expected,actual);
+        Assert.assertEquals("farttttt", person.makeNoise());
     }
 }

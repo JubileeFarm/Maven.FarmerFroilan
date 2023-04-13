@@ -8,9 +8,9 @@ import org.junit.Test;
 
 public class AnimalTest {
 
-    private Animal animal = new Animal();
+    private Animal animal = new Cow("Bessie");
 
-
+//assert its an animal and do the things an animal should do.
     @Test
     public void TestMakeNoise(){
 

@@ -34,13 +34,10 @@ public class MaverickTest {
 
         //then
         CropDuster LilDusty = new CropDuster();
-        Assert.assertTrue(LilDusty instanceof Aircraft);
-
-
 
         maverick.fly(LilDusty);
         Aircraft expect = LilDusty;
-        Aircraft actual = Maverick.getAircraft();
+        Aircraft actual = maverick.getAircraft();
 
         Assert.assertEquals(expect, actual);
 

@@ -25,14 +25,13 @@ public class Person implements Rider, Eater {
     @Override
     public void ride(Rideable rideable) {
 
+
     }
 
     @Override
     public void dismount() {
 
     }
-    public Rideable whip(){
-        return this.whip;
-    }
+
 
 }

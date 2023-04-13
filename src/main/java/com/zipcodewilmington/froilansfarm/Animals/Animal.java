@@ -4,13 +4,13 @@ import com.zipcodewilmington.froilansfarm.Interfaces.Eater;
 import com.zipcodewilmington.froilansfarm.Interfaces.Edible;
 import com.zipcodewilmington.froilansfarm.Interfaces.NoiseMaker;
 
-public class Animal implements Eater, NoiseMaker {
+public abstract class Animal<T extends Edible> implements Eater<T>, NoiseMaker {
     public String makeNoise() {
             return "noise";
         }
 
     @Override
-    public String eat(Edible edible) {
+    public String eat(T edible) {
         return "Yummy";
     }
 }

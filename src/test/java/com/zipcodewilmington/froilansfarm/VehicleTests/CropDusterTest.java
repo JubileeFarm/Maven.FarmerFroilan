@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.VehicleTests;
 
+import com.zipcodewilmington.froilansfarm.Crop.Crop;
 import com.zipcodewilmington.froilansfarm.FarmVehicle.CropDuster;
 import com.zipcodewilmington.froilansfarm.Interfaces.Aircraft;
 import com.zipcodewilmington.froilansfarm.Interfaces.NoiseMaker;
@@ -8,6 +9,13 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class CropDusterTest {
+
+    @Test
+    public void TestMakeNoise(){
+        CropDuster cd = new CropDuster();
+
+        Assert.assertEquals("Meow" , cd.makeNoise());
+    }
     @Test
     public void TestCropDuster(){
         CropDuster DusterBoi = new CropDuster();

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class FarmHouseTest {
     @Test
     public void TestFarmHouse(){
-        ArrayList<Person> list = new FarmHouse();
+      FarmHouse list = new FarmHouse();
         Person person = new Person("Hiep");
 
         list.add(person);
